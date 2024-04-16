@@ -12,7 +12,7 @@ const Navbar = () => {
         <div>
           <Link to="/">
             <h1 className="text-xl sm:text-3xl lg:text-4xl px-2">
-              StädaFintAB
+              Städa<span className="text-orange-400 text-3xl">Fint</span>AB
             </h1>
           </Link>
         </div>
