@@ -16,23 +16,26 @@ const Navbar = () => {
             </h1>
           </Link>
         </div>
-        <ul className="hidden md:flex gap-6 text-lg">
+        <ul className="hidden md:flex gap-6 text-l">
           <li>
-            <Link to="/">Om</Link>
+            <Link to="/">ABOUT</Link>
           </li>
           <li>
-            <Link to="#">Priser</Link>
+            <Link to="#">PRICING</Link>
           </li>
           <li>
-            <Link to="#">Kontakt</Link>
+            <Link to="#">SERVICE</Link>
+          </li>
+          <li>
+            <Link to="#">CONTACT</Link>
           </li>
         </ul>
-        <div className="flex gap-2 text-lg">
+        <div className="flex gap-2 text-l">
           <button className="border border-orange-400 px-4 rounded-full text-orange-400">
-            Logga in
+            LOGIN
           </button>
           <button className="border border-orange-400 px-4 rounded-full bg-orange-400">
-            Skapa konto
+            SIGN UP
           </button>
         </div>
         <button
@@ -49,11 +52,11 @@ const Navbar = () => {
           open ? "flex" : "hidden"
         } bg-[#090909] flex-col w-full items-center px-4 pt-16 pb-10 gap-6 text-[14px]`}
       >
-        <Link to="/">Om</Link>
-        <Link to="#">Priser till</Link>
-        <Link to="#">Kontakt</Link>
-        <Link to="#">Logga in</Link>
-        <Link to="#">Skapa konto</Link>
+        <Link to="/">About</Link>
+        <Link to="#">Pricing till</Link>
+        <Link to="#">Contact</Link>
+        <Link to="#">Login</Link>
+        <Link to="#">Sign up</Link>
       </div>
     </div>
   );
