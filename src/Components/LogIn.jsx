@@ -8,6 +8,10 @@ const LogIn = () => {
   const handleLogin = () => {
     if (username === "admin" && password === "admin") {
       setLoggedIn(true);
+    } else if (username === "personal" && password === "personal") {
+      setLoggedIn(true);
+    } else if (username === "kund" && password === "kund") {
+      setLoggedIn(true);
     } else {
       alert("Fel användarnamn eller lösenord");
     }
@@ -21,7 +25,7 @@ const LogIn = () => {
     <>
       {loggedIn ? (
         <div className="flex flex-col items-center gap-10 mt-20">
-          <p className="text-4xl">Welcome Admin!</p>
+          <p className="text-4xl">Welcome user!</p>
           <button
             onClick={handleLogout}
             className="border border-orange-400 px-4 rounded-full bg-orange-400 h-[30px] w-[100px]"
