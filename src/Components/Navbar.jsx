@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="bg-[#090909] mx-auto w-full flex justify-between items-center p-4">
+      <div className="sticky z-10 bg-[#090909] mx-auto w-full flex justify-between items-center p-4">
         <div>
           <Link to="/">
             <h1 className="text-xl sm:text-3xl lg:text-4xl px-2">
@@ -30,14 +30,16 @@ const Navbar = () => {
             <Link to="#">CONTACT</Link>
           </li>
         </ul>
-        <div className="flex gap-2 text-l">
-          <button className="border border-orange-400 px-4 rounded-full text-orange-400 h-[30px] w-[100px]">
-            LOGIN
-          </button>
-          <button className="border border-orange-400 px-4 rounded-full bg-orange-400 h-[30px] w-[100px]">
-            SIGN UP
-          </button>
-        </div>
+        <Link to={"/login"}>
+          <div className="flex gap-2 text-l">
+            <button className="border border-orange-400 px-4 rounded-full text-orange-400 h-[30px] w-[100px]">
+              LOGIN
+            </button>
+            <button className="border border-orange-400 px-4 rounded-full bg-orange-400 h-[30px] w-[100px]">
+              SIGN UP
+            </button>
+          </div>
+        </Link>
         <button
           className="block md:hidden text-x1"
           onClick={() => setOpen((prev) => !prev)}
