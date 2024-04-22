@@ -12,7 +12,7 @@ const Navbar = () => {
         <div>
           <Link to="/">
             <h1 className="text-xl sm:text-3xl lg:text-4xl px-2">
-              Städa<span className="text-orange-400 text-3xl">Fint</span>AB
+              Städa<span className="text-orange-400 text-4xl">Fint</span>AB
             </h1>
           </Link>
         </div>
@@ -31,10 +31,10 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="flex gap-2 text-l">
-          <button className="border border-orange-400 px-4 rounded-full text-orange-400">
+          <button className="border border-orange-400 px-4 rounded-full text-orange-400 h-[30px] w-[100px]">
             LOGIN
           </button>
-          <button className="border border-orange-400 px-4 rounded-full bg-orange-400">
+          <button className="border border-orange-400 px-4 rounded-full bg-orange-400 h-[30px] w-[100px]">
             SIGN UP
           </button>
         </div>
