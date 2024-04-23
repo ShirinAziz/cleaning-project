@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Admin from "./Admin";
+import User from "./User";
+import Employee from "./Employee";
 
 const LogIn = () => {
   const [username, setUsername] = useState("");
@@ -25,7 +28,9 @@ const LogIn = () => {
     <>
       {loggedIn ? (
         <div className="flex flex-col items-center gap-10 mt-20">
-          <p className="text-4xl">Welcome user!</p>
+          {username === "admin" && <Admin />}
+          {username === "personal" && <Employee />}
+          {username === "kund" && <User />}
           <button
             onClick={handleLogout}
             className="border border-orange-400 px-4 rounded-full bg-orange-400 h-[30px] w-[100px]"
