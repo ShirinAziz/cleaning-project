@@ -12,17 +12,17 @@ const Footer = () => {
         </div>
 
         <div>
-          <p>Kontakta oss</p>
+          <p>Contact</p>
           <div className="flex flex-col text-start mb:4 md:mb-0 mt-2">
             info@StädaFintAB.com
           </div>
         </div>
         <div>
-          <p>Adress</p>
-          <p className="mt-2">Stockholm, Sverige</p>
+          <p>Address</p>
+          <p className="mt-2">Stockholm, Sweden</p>
         </div>
         <div className="flex flex-col">
-          <p>Sociala medier</p>
+          <p>Social Media</p>
           <div className="flex mt-4 gap-3">
             <Link
               to="/"
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
 
           <button className="mt-6 border border-orange-400 text-lg text-orange-400">
-            Skapa konto
+            Sign up
           </button>
         </div>
       </div>
